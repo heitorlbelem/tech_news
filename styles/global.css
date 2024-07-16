@@ -42,16 +42,28 @@ h1, h2, h3 {
   font: inherit;
 }
 
-.container {
-  max-width: 1280px;
-  padding-inline: 3.2rem;
-  margin-inline: auto;
-}
-
 img {
   max-width: 100%;
 }
 
 main {
   margin-top: 4rem;
+}
+
+.container {
+  max-width: 1280px;
+  padding-inline: 3.2rem;
+  margin-inline: auto;
+}
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font: 500 1rem/1.2 var(--font-family);
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  text-transform: uppercase;
+  box-shadow: 0px 4px 16px hsla(229, 84%, 5%, 0.251);
 }
