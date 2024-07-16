@@ -48,12 +48,43 @@ img {
 
 main {
   margin-top: 4rem;
+  gap: 8rem;
 }
 
 .container {
   max-width: 1280px;
   padding-inline: 3.2rem;
   margin-inline: auto;
+}
+
+.card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    inset: 0;
+    top: 50%;
+    position: absolute;
+    background: linear-gradient(
+      180deg, transparent 0%, #020617 100%
+    );
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 2.4rem;
+
+    &:has(.text-lg) {
+      padding: 1.2rem;
+    }
+
+    h2 {
+      margin-top: .8rem;
+    }
+  }
 }
 
 .content-tag {
